@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: #E5E5E5;
+}
+
+nav{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    padding-right: 60px;
+    padding-top: 27px;
+}
+
+ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+a{
+    font-family: 'Heebo', sans-serif;
+    color: #000000;
+    margin-left: 33px;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+span{
+    font-family: 'Heebo', sans-serif;
+    color: #21243D;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    top: 230px;
+    left: 146px;
+}
+
+
+
+.lorem{
+    color: #21243D;
+    font-family: 'Heebo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px;
+    position: absolute;
+    top: 373px;
+    left: 148px;
+    padding-top: 30px;
+    word-break: break-word;
+}
+
+.button-resume{
+    font-family: 'Heebo', sans-serif;
+    color: #FFFFFF;
+    background: #FF6464;
+    padding: 15px;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 7px;
+    position: relative;
+    top: 380px;
+    right: 290px;
+}
+
+.div-img{
+    display: flex;
+    justify-content: end;
+    margin-right: 50px;
+    
+
+}
+
+.post-section{
+    width: 100%;
+    height: 396px;
+    margin-top: 200px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #EDF7FA;
+
+}
+
+.top-section{
+    font-family: 'Heebo', sans-serif;
+
+}
+
+.h3-section{
+    color: #21243D;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 30px;
+    padding-left: 148px;
+}
+
+
+@media screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+
+
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .div-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    img{
+        position: absolute;
+        width: 174.38px;
+        height: 180px;
+        left: 127px;
+        top: 83px;
+    }
+
+    span{
+        position: relative;
+        top: 293px;
+        left: 7px;
+        font-size: 31px;
+        margin: -12px;
+    }
+
+    .lorem{
+        font-size: 20px;
+        position: absolute;
+        top: 350px;
+        left: 51px;
+    }
+
+    .button-resume{
+        left: -11px;
+        top: 488px;
+        padding: 15px;
+    }
+
+    .post-section{
+        height: 647px;
+        margin-top: 567px;
+
+    }
+}

@@ -34,6 +34,10 @@ a{
     text-decoration: none;
 }
 
+.menu-icon{
+    display: none;
+}
+
 span{
     font-family: 'Heebo', sans-serif;
     color: #21243D;
@@ -103,10 +107,157 @@ span{
     padding-left: 148px;
 }
 
+.div-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-one{
+    background-color: #FFFFFF;
+    width: 418px;
+    height: 295px;
+    margin-left: 148px;
+    margin-top: 17px;
+}
+
+.post-one h2{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #21243D;
+    padding-top: 24px;
+    padding-left: 23px;
+    padding-right: 21px;
+}
+
+.post-one h3{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #21243D;
+    padding-left: 23px;
+    padding-right: 21px;
+    padding-top: 17px;
+}
+
+.post-one p{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #21243D;
+    padding-left: 23px;
+    padding-right: 27px;
+    padding-top: 7px;
+}
+
+.post-two{
+    background-color: #FFFFFF;
+    width: 418px;
+    height: 295px;
+    margin-left: 148px;
+    margin-top: 17px;
+}
+
+.post-two h2{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #21243D;
+    padding-top: 24px;
+    padding-left: 23px;
+    padding-right: 21px;
+}
+
+.post-two h3{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #21243D;
+    padding-left: 23px;
+    padding-right: 21px;
+    padding-top: 17px;
+}
+
+.post-two p{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #21243D;
+    padding-left: 23px;
+    padding-right: 27px;
+    padding-top: 7px;
+}
+
+.container-works{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-h3{
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: #21243D;
+    margin-left: 148px;
+    margin-top: 15px;
+}
+
+.dashboards img{
+    margin-left: 146px;
+    padding-top: 10px;
+
+}
+
+.dashboards h2{
+    position: absolute;
+    top: 1048px;
+    left: 407px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #21243D;
+    padding-top: 10px;
+}
+
+.dashboards h3{
+    position: absolute;
+    top: 1105px;
+    left: 407px;
+    font-family: 'Heebo', sans-serif;
+    background: #142850;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.dashboards p{
+    position: absolute;
+    left: 407px;
+    top: 1151px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    color: #21243D;
+    font-size: 16px;
+    padding-top: 10px;
+}
 
 @media screen and (max-width: 768px) {
     nav{
         display: none;
+    }
+
+    .menu-icon{
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 24px;
+        left: 347px;
+        display: block;
+        cursor: pointer;
     }
 
 
@@ -167,6 +318,89 @@ span{
     .post-section{
         height: 647px;
         margin-top: 567px;
+    }
 
+    .div-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .post-one{
+        position: relative;
+        right: 68px;
+        width: 354px;
+        height: 266px;
+    }
+
+    .post-one h2{
+        font-size: 22px;
+    }
+
+    .post-one h3{
+        font-size: 16px;
+    }
+
+    .post-two{
+        position: relative;
+        right: 68px;
+        width: 354px;
+        height: 266px;
+    }
+
+    .post-two h2{
+        font-size: 22px;
+    }
+
+    .post-two h3{
+        font-size: 16px;
+    }
+    
+    .container-works{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .main-h3{
+        position: absolute;
+        left: -14px;
+        top: 1332px;
+        text-align: center;
+    }
+
+    .dashboards img{
+        top: 1374px;
+        left: -101px;
+        width: 339px;
+        height: 230px;
+    }
+
+    .dashboards h2{
+        position: absolute;
+        top: 1604px;
+        left: 45px;
+        text-align: center;
+    }
+
+    .dashboards h3{
+        position: absolute;
+        top: 1668px;
+        left: 43px;
+        text-align: center;
+    }
+
+    .dashboards p{
+        position: absolute;
+        top: 1698px;
+        left: 12px;
+        text-align: center;
     }
 }

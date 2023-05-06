@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body{
@@ -26,7 +27,7 @@ nav ul li{
     list-style-type: none;
 }
 
-a{
+.link-nav{
     font-family: 'Heebo', sans-serif;
     color: #000000;
     margin-left: 33px;
@@ -75,7 +76,7 @@ span{
     border-radius: 7px;
     position: relative;
     top: 380px;
-    right: 290px;
+    right: 254px;
 }
 
 .div-img{
@@ -250,7 +251,115 @@ span{
     padding-top: 10px;
 }
 
+.vibrant h2{
+    position: absolute;
+    top: 1247px;
+    left: 407px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #21243D;
+    padding-top: 10px;
+}
+
+.vibrant h3{
+    position: absolute;
+    top: 1306px;
+    left: 407px;
+    font-family: 'Heebo', sans-serif;
+    background: #142850;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.vibrant p{
+    position: absolute;
+    left: 407px;
+    top: 1345px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    color: #21243D;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.type h2{
+    position: absolute;
+    top: 1438px;
+    left: 407px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: #21243D;
+    padding-top: 10px;
+}
+
+.type h3{
+    position: absolute;
+    top: 1497px;
+    left: 407px;
+    font-family: 'Heebo', sans-serif;
+    background: #142850;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 18px;
+    width: 62px;
+    height: 25px;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.type p{
+    position: absolute;
+    left: 407px;
+    top: 1536px;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    color: #21243D;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+
+.social-icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 57px;
+}
+
+.social-icons img{
+    padding: 20px;
+}
+
+.social-p{
+    font-family: 'Heebo', sans-serif;
+    color: #21243D;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.link-socials{
+    text-decoration: none;
+    outline: none;
+}
+
 @media screen and (max-width: 768px) {
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     nav{
         display: none;
     }
@@ -272,6 +381,8 @@ span{
     }
 
     body{
+        width: 100vw;
+
         display: flex;
         justify-content: center;
         align-items: center;
@@ -286,12 +397,16 @@ span{
     }
 
     .div-img{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: block;
+        margin: 0 auto;
     }
 
-    img{
+    .foto-perfil{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .foto-perfil{
         position: absolute;
         width: 174.38px;
         height: 180px;
@@ -319,7 +434,6 @@ span{
         top: 488px;
         padding: 15px;
     }
-
     .post-section{
         width: 100vw;
         height: 100vh;
@@ -389,11 +503,18 @@ span{
         align-items: center;
     }
 
+    .img-dash{
+        display: block;
+        margin: 0 auto;
+    }
+
     .img-dash img{
         top: 1374px;
         left: -103px;
         width: 315px;
         height: 226px;
+        margin-right: 133px;
+        margin-top: 42px;
     }
 
 
@@ -417,5 +538,37 @@ span{
         top: 1698px;
         left: 12px;
         text-align: center;
+    }
+
+    .vibrant{
+        display: none;
+    }
+
+    .type{
+        display: none;
+    }
+
+    .social-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding: 182px;
+        margin-top: -79px;
+    }
+
+    .social-icons img{
+        position: relative;
+        top: 184px;
+        padding: 13px;
+    }
+
+    .social-p{
+        font-family: 'Heebo', sans-serif;
+        color: #21243D;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+        padding-top: -13px;
     }
 }

@@ -9,6 +9,7 @@ body{
     width: 100%;
     height: 100vh;
     background-color: #E5E5E5;
+    overflow-x: hidden;
 }
 
 nav{
@@ -210,10 +211,6 @@ span{
 
 }
 
-.img-dash{
-    display: flex;
-}
-
 .dashboards h2{
     position: absolute;
     top: 1048px;
@@ -360,6 +357,14 @@ span{
         box-sizing: border-box;
     }
 
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
     nav{
         display: none;
     }
@@ -377,16 +382,7 @@ span{
 
     .container{
         width: 100vw;
-        height: 100vh;
-    }
-
-    body{
-        width: 100vw;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+        height: 100%;
     }
 
     main{
@@ -446,12 +442,14 @@ span{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100vw;
     }
 
     .post-one{
-        position: relative;
-        right: 68px;
-        width: 340px;
+        position: absolute;
+        top: 1032px;
+        right: 25px;
+        width: 344px;
         height: 266px;
     }
 
@@ -464,8 +462,9 @@ span{
     }
 
     .post-two{
-        position: relative;
-        right: 68px;
+        position: absolute;
+        top: 1032px;
+        right: 25px;
         width: 344px;
         height: 266px;
     }
@@ -496,25 +495,15 @@ span{
         top: 1332px;
         text-align: center;
     }
-    
-    .img-dash{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .img-dash{
-        display: block;
-        margin: 0 auto;
-    }
 
     .img-dash img{
+        display: block;
+        margin: 0 auto;
+        position: absolute;
         top: 1374px;
-        left: -103px;
-        width: 315px;
-        height: 226px;
-        margin-right: 133px;
-        margin-top: 42px;
+        left: 35px;
+        width: 300px;
+        height: 218px;
     }
 
 
@@ -554,7 +543,7 @@ span{
         justify-content: center;
         text-align: center;
         padding: 182px;
-        margin-top: -79px;
+        margin-top: 146px;
     }
 
     .social-icons img{
@@ -571,4 +560,6 @@ span{
         text-align: center;
         padding-top: -13px;
     }
+
+
 }
